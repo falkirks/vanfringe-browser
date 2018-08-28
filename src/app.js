@@ -57,7 +57,7 @@ new AvailabilityFeed().get().then((data) => {
       events.forEach((event) => {
         if(event.EventId === a.EventId){
           const m = moment(event.FormattedDate, 'M/D/YYYY h:mm A');
-          event.day = m.format('Do');
+          event.day = m.format('D');
           event.time = m.format('h:mm A');
           event.endTime = m.add(event.Show.LongMinutes, 'minutes').format('h:mm A');
           result.push({...event, ...a});
