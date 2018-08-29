@@ -13,9 +13,13 @@
 </head>
 <body style="overflow: hidden;">
 
-<div id="app" style="padding: 50px;">
+<div id="app" style="padding: 50px; display: none;">
   <table id="eventsTable" class="display" style="width:100%">
   </table>
+</div>
+<div id="connectError" class="container" style="display: none; width: 100%;">
+  <h2>There was an error connecting to the feed API :(</h2>
+  <a href="">Try again</a>
 </div>
 
   <script src="app.js"></script>

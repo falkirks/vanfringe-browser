@@ -19,10 +19,26 @@ export const drawTable = (data) => {
       { data: 'SoldTickets', title: 'Tickets Sold' },
       { data: 'AvailableCapacity', title: 'Tickets left' }
     ],
-    order: [[2, 'asc']],
+    order: [[3, 'asc']],
     buttons: [
-      'excel', 'pdf', 'colvis'
-    ]
+      'excel',
+      {
+        extend: 'pdfHtml5',
+        messageTop: 'PDF generated with vanfringe-browser by Noah Heyl.',
+        filename: 'fringe',
+        title: 'Vancouver Fringe events'
+      },
+      'colvis',
+      {
+        text: 'What is this?',
+        action: ( e, dt, node, config ) => {
+          window.open('why.html');
+        }
+      }
+    ],
+    select: {
+      style: 'os'
+    }
   });
 
 };

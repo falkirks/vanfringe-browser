@@ -23,6 +23,9 @@ DataTables(window, $);
 import DataTablesResponsive from 'datatables.net-responsive-dt';
 DataTablesResponsive(window, $);
 
+import DataTablesSelect from 'datatables.net-select-dt';
+DataTablesSelect(window, $);
+
 import {EventsFeed} from "./feeds/EventsFeed";
 import {AvailabilityFeed} from "./feeds/AvailabilityFeed";
 import {ShowsFeed} from "./feeds/ShowsFeed";
@@ -67,8 +70,10 @@ new AvailabilityFeed().get().then((data) => {
     drawTable(result);
   });
 
+}).catch((err) =>  {
+  document.querySelector("#app").style.display = "none";
+  document.querySelector("#connectError").style.display = "block";
+  hideLoadingScreen(document);
 });
-
-
 
 document.querySelector("#app").style.display = "block";

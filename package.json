@@ -28,6 +28,7 @@
   "dependencies": {
     "datatables.net-dt": "^1.10.19",
     "datatables.net-responsive-dt": "^2.2.3",
+    "datatables.net-select-dt": "^1.2.7",
     "fs-jetpack": "^2.1.0",
     "handlebars": "^4.0.11",
     "jquery": "^3.3.1",
