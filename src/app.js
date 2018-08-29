@@ -23,7 +23,6 @@ DataTables(window, $);
 import DataTablesResponsive from 'datatables.net-responsive-dt';
 DataTablesResponsive(window, $);
 
-
 import {EventsFeed} from "./feeds/EventsFeed";
 import {AvailabilityFeed} from "./feeds/AvailabilityFeed";
 import {ShowsFeed} from "./feeds/ShowsFeed";
