@@ -24,7 +24,7 @@ export const drawTable = (data) => {
       'excel',
       {
         extend: 'pdfHtml5',
-        messageTop: 'PDF generated with vanfringe-browser by Noah Heyl.',
+        messageTop: 'PDF generated with vanfringe-browser by noa.',
         filename: 'fringe',
         title: 'Vancouver Fringe events'
       },
