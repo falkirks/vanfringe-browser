@@ -2,7 +2,7 @@ import rp from "request-promise-native";
 import * as moment from 'moment';
 
 export const FEED_BASE = "https://tickets.vancouverfringe.com/feed/";
-const FRINGE_END_DATE = '2018-09-17';
+const FRINGE_END_DATE = '2019-09-15';
 
 export class Feed{
   url;

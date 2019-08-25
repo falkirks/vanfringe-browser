@@ -1,12 +1,12 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
+  "name": "vanfringe-browser",
+  "productName": "Vanfringe Browser",
+  "description": "Browser for vancouver fringe shows",
   "version": "0.0.0",
   "private": true,
-  "author": "Mr. Gumby <mr.gumby@example.com>",
-  "copyright": "© 2017, Gumby inc.",
-  "homepage": "http://example.com",
+  "author": "Noah Heyl <me@falkirks.com>",
+  "copyright": "© 2018, Noah Heyl",
+  "homepage": "https://falkirks.com",
   "main": "app/background.js",
   "build": {
     "appId": "com.example.electron-boilerplate",
